@@ -31,4 +31,6 @@ export class AppComponent {
 
   nombre2 = 'juan diego oliveRos rIOs';
 
+  video = '-SLLe5qmg-Q';
+
 }

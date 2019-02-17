@@ -84,22 +84,22 @@
     </tr>
     <tr>
       <td>{{valorDePromesa}}</td>
-      <td>async </td>
+      <td>async</td>
       <td>{{valorDePromesa | async }}</td>
     </tr>
     <tr>
       <td>{{fecha}}</td>
-      <td>date </td>
+      <td>date</td>
       <td>{{fecha | date }}</td>
     </tr>
     <tr>
       <td>{{fecha}}</td>
-      <td>date: 'medium' </td>
+      <td>date: 'medium'</td>
       <td>{{fecha | date :'medium' }}</td>
     </tr>
     <tr>
       <td>{{fecha}}</td>
-      <td>date: 'MMMM - dd' </td>
+      <td>date: 'MMMM - dd'</td>
       <td>{{fecha | date :'MMMM - dd' }}</td>
     </tr>
     <tr>
@@ -119,7 +119,7 @@
   <h4>
     <ul>
       <li *ngFor="let item of arreglo | slice:5:20">
-      {{  item }}
+        {{  item }}
       </li>
     </ul>
   </h4>
@@ -131,6 +131,13 @@
     {{ wolverine |json }}
   </pre>
 
+
+  <h4>Youtube
+    <small>Video</small>
+  </h4>
+  <hr>
+  <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 </div>
