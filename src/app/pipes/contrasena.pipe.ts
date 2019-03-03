@@ -8,8 +8,7 @@ export class ContrasenaPipe implements PipeTransform {
   transform(value: string, activar: boolean = true): string {
     if (activar) {
       const arrnombre = value.split('');
-
-      for (let i in arrnombre) {
+      for (const i in arrnombre) {
         arrnombre[i] = '*';
       }
       const pass = arrnombre.join('');
